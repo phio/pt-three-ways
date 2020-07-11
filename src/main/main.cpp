@@ -67,7 +67,7 @@ void addCube(SB &sb, const Vec3 &low, const Vec3 &high,
 }
 
 template <typename SB>
-Camera createCornellScene(SB &sb, const RenderParams &renderParams) {
+auto createCornellScene(SB &sb, const RenderParams &renderParams) {
   DirRelativeOpener opener("scenes");
   auto in = opener.open("CornellBox-Original.obj");
   loadObjFile(*in, opener, sb);

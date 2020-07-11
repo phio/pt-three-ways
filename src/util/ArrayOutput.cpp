@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <memory>
 #include <numeric>
+#include <string>
 
 namespace {
 std::uint8_t componentToInt(double x) {
